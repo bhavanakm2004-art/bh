@@ -26,10 +26,10 @@ import pandas as pd
 
 data={
     'Name':['Alice','Bob','charlie','anu','neha','adhee'],
-      'Age':[25,30,33,24,56,12],
+      'Age':[25,30,33,24,56,None],
       'score':[85.5,90,70,60,80,67]
       }
-# df=pd.DataFrame(data)
+df=pd.DataFrame(data)
 # df.info()
 
 
@@ -47,7 +47,20 @@ data={
 
 #df.loc[]
 
-df=pd.DataFrame(data,index=['a','b','c','d','e','f'])
-print(df.loc['a'])
-print(df.loc['b','Name'])
-print(df.loc[:, ['Name','score']])
+# df=pd.DataFrame(data,index=['a','b','c','d','e','f'])
+# print(df.loc['a'])
+# print(df.loc['b','Name'])
+# print(df.loc[:, ['Name','score']])
+
+# print(df.iloc[0])
+# print(df.iloc[1,0])
+# print(df.iloc[:, 0:2])
+
+#null
+
+# df=pd.DataFrame(data)
+# print(df.isnull())
+
+#df.dropna to drop null values
+df=pd.DataFrame(data)
+print(df.dropna())
