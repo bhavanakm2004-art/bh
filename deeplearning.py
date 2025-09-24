@@ -83,7 +83,7 @@ history=model.fit(x_train,y_train,
                   epochs=5,
                   batch_size=64,    #faster training
                   validation_data=(x_test,y_test),
-                  verbose=1)    #shows progress bar
+                  verbose=1)    #shows progress ba
 
 #8. evaluate on test data
 test_loss,test_acc=model.evaluate(x_test,y_test,verbose=0)
